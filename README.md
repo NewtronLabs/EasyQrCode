@@ -1,1 +1,1 @@
-# EasyQrCodeGenerator
+# EasyQrCode
