@@ -55,6 +55,16 @@ Bitmap bitmap = qrCode.generateBitmap(1000);
 qrImageView.setImageBitmap(bitmap);
 ```
 
+### Supported Types
+
+```java
+IQrCodeBuilderBluetoothDevice
+IQrCodeBuilderEmail
+IQrCodeBuilderEvent
+IQrCodeBuilderRaw
+IQrCodeBuilderText
+```
+
 **Encrpted Logging**
 
 ```java
