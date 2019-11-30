@@ -1,6 +1,6 @@
 # EasyQrCode
 
-Library for creating and scanning QR codes for Android.
+Library for creating and scanning QR codes for Android. Fully supports encryption.
 
 ---
 
@@ -63,21 +63,6 @@ IQrCodeBuilderEmail
 IQrCodeBuilderEvent
 IQrCodeBuilderRaw
 IQrCodeBuilderText
-```
-
-**Encrpted Logging**
-
-```java
-// Example Cipher and Key.
-DESKeySpec keySpec = new DESKeySpec("Your secret Key phrase".getBytes("UTF8"));
-SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
-SecretKey key = keyFactory.generateSecret(keySpec);\
-Cipher cipher;
-cipher = Cipher.getInstance("DES");
-
-// Switch To Secure Logger
-SLog.setLogger(new SecureLogger(cipher, key));
-SLog.v("Test", "This is now encrypted!");
 ```
 
 ---
